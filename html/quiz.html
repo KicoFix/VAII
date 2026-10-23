@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Odpovedajte na otázky v kvíze Quiz Arena.">
+  <title>Informatika – Quiz Arena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Quiz Arena – domov">
+      <span class="brand-mark" aria-hidden="true">QA</span>
+      <span class="brand-name">Quiz Arena</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navigácia používateľa">
+      <a class="nav-link" href="index.html">Domov</a>
+      <a class="nav-link" href="index.html#kategorie">Kategórie</a>
+      <a class="nav-link" href="#vysledky">Moje výsledky</a>
+      <a class="user-chip" href="#profil">
+        <span class="user-avatar" aria-hidden="true">MK</span>
+        <span>Matúš K.</span>
+        <span class="chevron" aria-hidden="true">⌄</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="play-area">
+    <a class="back-link" href="index.html">
+      ← <span>Späť na výber kvízov</span>
+    </a>
+
+    <div class="quiz-heading">
+      <p class="eyebrow">Kategória: Technológie</p>
+      <h1>Informatika</h1>
+      <p>Odpovedzte na otázky a získajte čo najviac bodov.</p>
+    </div>
+
+    <section class="question-card" aria-labelledby="question-title">
+      <div class="question-meta">
+        <span class="question-number">Otázka <strong>1</strong> z 10</span>
+        <span class="points-label">1 bod</span>
+      </div>
+
+      <div
+        class="progress-track"
+        role="progressbar"
+        aria-label="Priebeh kvízu"
+        aria-valuemin="0"
+        aria-valuemax="10"
+        aria-valuenow="1"
+      >
+        <span></span>
+      </div>
+
+      <h2 id="question-title">
+        Ktorý jazyk sa najčastejšie používa na úpravu vzhľadu webových stránok?
+      </h2>
+
+      <div
+        class="question-image"
+        role="img"
+        aria-label="Voliteľné miesto pre obrázok k otázke"
+      >
+        <span class="placeholder-symbol" aria-hidden="true">▧</span>
+        <span>Obrázok k otázke (voliteľný)</span>
+      </div>
+
+      <fieldset class="answer-options">
+        <legend>Vyberte jednu odpoveď</legend>
+        <button class="answer-button" type="button">
+          <span class="answer-letter">A</span>
+          <span>HTML</span>
+        </button>
+        <button class="answer-button selected" type="button" aria-pressed="true">
+          <span class="answer-letter">B</span>
+          <span>CSS</span>
+          <span class="selected-mark" aria-hidden="true">✓</span>
+        </button>
+        <button class="answer-button" type="button">
+          <span class="answer-letter">C</span>
+          <span>SQL</span>
+        </button>
+      </fieldset>
+
+      <div class="question-actions">
+        <span class="answer-hint">Vyberte odpoveď a pokračujte.</span>
+        <button class="skip-button" type="button">
+          Preskočiť otázku <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <p class="play-footnote">Vaše odpovede sa vyhodnotia po dokončení kvízu.</p>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Quiz Arena</span>
+    <a href="index.html">Ukončiť kvíz</a>
+  </footer>
+</body>
+</html>
